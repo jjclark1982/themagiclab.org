@@ -1,6 +1,6 @@
 ---
 title: "About The Magic Lab"
-permalink: "about-the-magic-lab"
+permalink: "index"
 ---
 ### Welcome
 

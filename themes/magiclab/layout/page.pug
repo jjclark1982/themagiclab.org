@@ -1,0 +1,30 @@
+extends layout
+
+block content
+                h2= title
+                article
+                    - sections = _.groupBy(rows, 'section')
+                    each sectionRows, section in sections
+                        section.data-section(class=className('data-section-'+section))
+                            if (section && section != 'undefined')
+                                h3
+                                    a.section-link(id=className(section))
+                                    = section
+                            each row in sectionRows
+                                div.data-item
+                                    each col in Object.keys(row)
+                                        - data = row[col]
+                                        if (col[0] != '_' && col != 'id' && col != 'section' && data)
+                                            .data-field(class=className('data-field-'+col))
+                                                if (col == 'name' && row['link'])
+                                                    a(href=row['link'])= data
+                                                    - delete row['link']
+                                                else if (col == 'link')
+                                                    a(href=data)= data
+                                                else if (col == 'photo' && data != '')
+                                                    a(href='assets/'+data)
+                                                        img(src='assets/t/'+data)
+                                                else
+                                                    != marked(row[col])
+
+                    div(style="clear:both;")
