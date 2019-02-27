@@ -1,6 +1,6 @@
 ---
 title: "Robots And Other Systems"
-path: "robots-and-other-systems"
+permalink: "robots-and-other-systems"
 sections: {}
 ---
 [Willow Garage Personal Robot 2 (PR2)](https://www.willowgarage.com/pages/pr2/specs)

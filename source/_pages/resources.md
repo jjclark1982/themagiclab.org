@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-path: "resources"
+permalink: "resources"
 ---
 ### Magic Lab Software
 

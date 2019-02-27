@@ -1,6 +1,6 @@
 ---
 title: "Join Us"
-path: "join-us"
+permalink: "join-us"
 ---
 ### Industry Engagement Opportunities
 

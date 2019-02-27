@@ -1,6 +1,6 @@
 ---
 title: "About The Magic Lab"
-path: "about-the-magic-lab"
+permalink: "about-the-magic-lab"
 ---
 ### Welcome
 
