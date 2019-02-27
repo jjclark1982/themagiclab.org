@@ -1,9 +1,10 @@
-extends layout
+extends htmldoc.pug
 
 block content
-                h2= title
+                h2= page.title
+                article !{page.content}
                 article
-                    - sections = _.groupBy(rows, 'section')
+                    - sections = _.groupBy(page.items, 'section')
                     each sectionRows, section in sections
                         section.data-section(class=className('data-section-'+section))
                             if (section && section != 'undefined')
@@ -25,6 +26,6 @@ block content
                                                     a(href='assets/'+data)
                                                         img(src='assets/t/'+data)
                                                 else
-                                                    != marked(row[col])
+                                                    != row[col]
 
                     div(style="clear:both;")

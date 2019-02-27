@@ -1,6 +1,7 @@
 ---
 title: "About The Magic Lab"
 permalink: "index"
+layout: "page.pug"
 ---
 ### Welcome
 
