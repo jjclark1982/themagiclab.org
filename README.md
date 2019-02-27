@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0351602-c43c-4095-bf42-f96bf30aa0bc/deploy-status)](https://app.netlify.com/sites/themagiclab/deploys)
+
 # Magic Lab Website
 
 Static site generator for university research lab website.
