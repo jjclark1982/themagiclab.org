@@ -2,6 +2,8 @@
 title: "Robots And Other Systems"
 permalink: "robots-and-other-systems"
 sections: {}
+layout: "page"
+image: "/images/Moke_Helicopter_NoColour.jpg"
 ---
 [Willow Garage Personal Robot 2 (PR2)](https://www.willowgarage.com/pages/pr2/specs)
 

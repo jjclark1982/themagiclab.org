@@ -1,7 +1,8 @@
 ---
 title: "About The Magic Lab"
 permalink: "index"
-layout: "page.pug"
+layout: "page"
+image: "/style/robot-background.jpg"
 ---
 ### Welcome
 

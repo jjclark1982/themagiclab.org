@@ -1,6 +1,8 @@
 ---
 title: "Resources"
 permalink: "resources"
+layout: "page"
+image: "/images/Moke_Robot_NoColour.jpg"
 ---
 ### Magic Lab Software
 

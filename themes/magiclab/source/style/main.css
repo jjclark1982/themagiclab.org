@@ -1817,16 +1817,7 @@ footer .pure-g {
     border: 2px solid navy;
 }
 
-/* front page */
-.data-page-About-the-Magic-Lab .background {
-    background-image: url(./robot-background.jpg);
-}
-
 /* news page */
-
-.data-page-News-Items .background {
-    background-image: url(../assets/FuchsiaTashiMoke.jpg);
-}
 
 .data-page-News-Items .data-field-title {
     display: block;
@@ -1840,9 +1831,6 @@ footer .pure-g {
 
 /* people page */
 
-.data-page-People .background {
-    background-image: url(../assets/attila-and-mahya.jpg);
-}
 .data-page-People article {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1894,9 +1882,6 @@ footer .pure-g {
 }
 
 /* research projects page */
-.data-page-Research-Projects .background {
-    background-image: url(../assets/background-research.jpg);
-}
 .data-page-Research-Projects .data-item {
     margin-top: 1em;
 }
@@ -1938,9 +1923,6 @@ footer .pure-g {
 }
 
 /* leadership page */
-.data-page-Leadership .background {
-    background-image: url(/assets/background-leadership.jpg);
-}
 .data-page-Leadership .data-field-date {
     float: right;
 }
@@ -1949,22 +1931,11 @@ footer .pure-g {
 }
 
 /* speaker presentations page */
-.data-page-Invited-Speaker-Presentations .background {
-    background-image: url(../assets/magic-lab-speech.jpg);
-}
 .data-page-Invited-Speaker-Presentations .data-field-date {
     float: right;
 }
 
-/* resources page */
-.data-page-Resources .background {
-    background-image: url(../assets/Moke_Robot_NoColour.jpg);
-}
-
 /* hardware page */
-.data-page-Robots-and-Other-Systems .background {
-    background-image: url(../assets/Moke_Helicopter_NoColour.jpg);
-}
 .data-page-Robots-and-Other-Systems .data-field-name,
 .data-page-Robots-and-Other-Systems .data-field-nickname,
 .data-page-Robots-and-Other-Systems .data-field-quantity {
@@ -1985,11 +1956,6 @@ footer .pure-g {
     content: ")";
     position: relative;
     left: -0.125em;
-}
-
-/* join us page */
-.data-page-Join-Us .background {
-    background-image: url(../assets/background-join-us.jpg);
 }
 
 /* admin page */

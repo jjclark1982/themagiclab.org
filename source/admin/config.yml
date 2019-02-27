@@ -98,8 +98,10 @@ collections:
     folder: "source/pages"
     create: true
     fields: 
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: Title, name: title, widget: string}
+      - {label: "Path", name: "permalink", default: "{{slug}}"}
+      - {label: Image, name: image, widget: image}
 
 
 

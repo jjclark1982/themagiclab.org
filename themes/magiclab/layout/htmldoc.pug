@@ -7,8 +7,8 @@ html
         title= page.title + " | " + config.title
         link(rel='stylesheet', href='style/main.css')
     
-    body.data-page(class=className('data-page-'+title))
-        .background
+    body.data-page(class=className('data-page-'+page.title))
+        .background(style=`background-image: url(${page.image})`)
         header
             .container.pure-menu.pure-menu-horizontal
                 ul.pure-menu-list
