@@ -1,8 +1,8 @@
 ---
 title: Connected Intelligent Vehicles
 permalink: connected-intelligent-vehicles
-image: >-
-  https://raw.githubusercontent.com/uts-magic-lab/www.themagiclab.org/master/source/images/Moke_GPSApp_NoColour.jpg
+layout: "page"
+image: "/images/Moke_GPSApp_NoColour.jpg"
 ---
 
 Car transportation is ripe for disruption. For several reasons, first they can drive themselves and they can acquire information form the Internet of Things. We are developing an Intelligent Connected Car that can collaborate with robots, drones and the Internet of All Things.
