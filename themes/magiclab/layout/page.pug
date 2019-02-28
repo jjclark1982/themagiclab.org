@@ -28,4 +28,28 @@ block content
                                                 else
                                                     != row[col]
 
+                    - sections = _.defaults(page.sections, {})
+                    each sectionRows, section in sections
+                        section.data-section(class=className('data-section-'+section))
+                            if (section && section != 'undefined')
+                                h3
+                                    a.section-link(id=className(section))
+                                    = section
+                            each row in sectionRows
+                                div.data-item
+                                    each col in Object.keys(row)
+                                        - data = row[col]
+                                        if (col[0] != '_' && col != 'id' && col != 'section' && data)
+                                            .data-field(class=className('data-field-'+col))
+                                                if (col == 'name' && row['link'])
+                                                    a(href=row['link'])= data
+                                                    - delete row['link']
+                                                else if (col == 'link')
+                                                    a(href=data)= data
+                                                else if (col == 'photo' && data != '')
+                                                    a(href='assets/'+data)
+                                                        img(src='assets/t/'+data)
+                                                else
+                                                    != row[col]
+
                     div(style="clear:both;")
