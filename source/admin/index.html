@@ -15,13 +15,21 @@
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
         return h('div', {},
-          h('img', {src: bg.toString(), style: {maxWidth: "100%"}}),
-          h('h1', {}, entry.getIn(['data', 'title'])),
-          h('div', {"className": "text"}, this.props.widgetFor('body'))
+          h('div', {className: "background", style: {backgroundImage: "url("+bg+")"}}),
+          h('main', {}, [
+            h('div', {className: 'container'}, [
+              h('div', {className: 'splat'}),
+              h('a', {id: 'start'}),
+              h('h1', {}, 'Innovation and Enterprise Research Laboratory'),
+              h('h2', {}, entry.getIn(['data', 'title'])),
+              h('article', {}, this.props.widgetFor('body'))
+            ])
+          ])
         );
       }
     });
-    CMS.registerPreviewTemplate("pages", PostPreview)
+    CMS.registerPreviewTemplate("pages", PostPreview);
+    CMS.registerPreviewStyle('/style/main.css');
   </script>
 </body>
 </html>
