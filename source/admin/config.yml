@@ -11,6 +11,18 @@ public_folder: "/images"
 
 
 collections:
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "source/pages"
+    create: true
+    fields: 
+      - {label: Title, name: title, widget: string}
+      - {label: "Layout", name: "layout", widget: hidden, default: "page"}
+      - {label: "URL", name: "permalink", default: "{{slug}}"}
+      - {label: Image, name: image, widget: image}
+      - {label: Body, name: body, widget: markdown}
+
   - name: "news"
     label: "News"
     label_singular: "News Item"
@@ -25,8 +37,8 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "pages"
-    label: "Pages"
+  - name: "custom-pages"
+    label: "Custom Pages"
     files:
       - file: "source/pages/index.md"
         label: "Landing Page"
@@ -92,25 +104,12 @@ collections:
       # - name: "invited-speaker-presentations"
 
 
-  - name: "simple-pages"
-    label: "Simple Pages"
-    label_singular: "Simple Page"
-    folder: "source/pages"
-    create: true
-    fields: 
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-      - {label: Title, name: title, widget: string}
-      - {label: "Layout", name: "layout", widget: select, default: "page", options: ["page", "post"]}
-      - {label: "URL", name: "permalink", default: "{{slug}}"}
-      - {label: Image, name: image, widget: image}
-      - {label: Body, name: body, widget: markdown}
-
 
 
   - name: "people"
     label: "People"
     label_singular: "Person"
-    folder: "src/people"
+    folder: "source/people"
     identifier_field: "name"
     slug: "{{name}}"
     create: true
