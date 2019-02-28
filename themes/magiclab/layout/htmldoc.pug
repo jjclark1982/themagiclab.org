@@ -5,7 +5,7 @@ html
     head
         meta(charset="utf-8")
         title= page.title + " | " + config.title
-        link(rel='stylesheet', href='style/main.css')
+        link(rel='stylesheet', href='/style/main.css')
     
     body.data-page(class=className('data-page-'+page.title))
         .background(style=`background-image: url(${page.image})`)
@@ -14,7 +14,7 @@ html
                 ul.pure-menu-list
                     li.pure-menu-item
                         a.logo.pure-menu-link.pure-menu-heading(href=".")
-                            img(src="style/magic-lab-logo.svg" width="160px" alt="The Magic Lab")
+                            img(src="/style/magic-lab-logo.svg" width="160px" alt="The Magic Lab")
                     li.pure-menu-item
                         a.pure-menu-link(href="news-items.html") News
                     li.pure-menu-item
