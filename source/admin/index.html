@@ -11,6 +11,8 @@
   <script>
     var PostPreview = createClass({
       render: function() {
+        window.lastEntry = this.props.entry;
+        console.log("rendering", this.props.entry.get('data'));
         var entry = this.props.entry;
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
