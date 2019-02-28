@@ -1,7 +1,11 @@
+# Netlify-CMS Configuration
+# See https://www.netlifycms.org/docs/configuration-options/
+
+site_url: "https://themagiclab.netlify.com"
+display_url: "https://themagiclab.netlify.com"
+logo_url: "/style/magic-lab-logo.svg"
+
 backend:
-  # name: git-gateway
-  # branch: master
-  # name: test-repo
   name: github
   repo: uts-magic-lab/www.themagiclab.org
   branch: master
@@ -9,13 +13,13 @@ backend:
 media_folder: "source/images" # Folder where user uploaded files should go
 public_folder: "/images"
 
-
 collections:
   - name: "pages"
     label: "Pages"
     label_singular: "Page"
     folder: "source/pages"
     create: true
+    preview_path: "{{permalink}}"
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Layout", name: "layout", widget: hidden, default: "page"}
@@ -28,11 +32,12 @@ collections:
     label_singular: "News Item"
     folder: "source/_posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    preview_path: "/{{year}}/{{month}}/{{day}}/{{title}}/"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
