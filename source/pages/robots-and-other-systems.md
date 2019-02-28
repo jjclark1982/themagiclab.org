@@ -1,7 +1,6 @@
 ---
 title: "Robots And Other Systems"
 permalink: "robots-and-other-systems"
-sections: {}
 layout: "page"
 image: "/images/Moke_Helicopter_NoColour.jpg"
 ---
