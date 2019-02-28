@@ -3,6 +3,7 @@ title: "About The Magic Lab"
 permalink: "index"
 layout: "page"
 image: "/style/robot-background.jpg"
+templateKey: "page"
 ---
 ### Welcome
 
