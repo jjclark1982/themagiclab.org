@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-permalink: "resources"
+permalink: resources/
 layout: "page"
 image: "/images/Moke_Robot_NoColour.jpg"
 ---
