@@ -26,7 +26,7 @@ block content
                                                     a(href='assets/'+data)
                                                         img(src='assets/t/'+data)
                                                 else
-                                                    != row[col]
+                                                    != marked(row[col])
 
                     - sections = _.defaults(page.sections, {})
                     each sectionRows, section in sections
@@ -50,6 +50,6 @@ block content
                                                     a(href='assets/'+data)
                                                         img(src='assets/t/'+data)
                                                 else
-                                                    != row[col]
+                                                    != marked(row[col])
 
                     div(style="clear:both;")
