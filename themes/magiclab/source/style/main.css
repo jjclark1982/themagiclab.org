@@ -1831,7 +1831,7 @@ footer .pure-g {
 
 /* people page */
 
-.data-page-People article {
+.data-page-People article.frontmatter {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

@@ -61,18 +61,6 @@ collections:
   - name: "custom-pages"
     label: "Custom Pages"
     files:
-      - file: "source/pages/index.md"
-        label: "Landing Page"
-        name: "Index Page"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
       - name: "leadership"
         label: "Leadership"
         file: "source/pages/leadership.md"
@@ -80,10 +68,10 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Sections, name: sections, widget: list,
               fields: [
-                {label: Title, name: title, widget: string},
+                {label: "Heading", name: "heading", widget: string},
                 {label: Items, name: items, widget: list,
                   fields: [
-                    {label: Name, name: name, widget: string},
+                    {label: Title, name: name, widget: string},
                     {label: Date, name: date, widget: string, required: false},
                     {label: Link, name: link, widget: string, required: false},
                     {label: Location, name: location, widget: string, required: false},
@@ -94,27 +82,27 @@ collections:
               ]
             }
 
-      - name: "research-projects"
-        label: "Research Projects"
-        file: "source/pages/research-projects/index.md"
-        fields: 
-          - {label: Title, name: title, widget: string}
-          - {label: "Projects", name: "projects", widget: "list", fields: [
-              {label: "Project Title", name: "title", widget: "string"},
-              {label: "Grant", name: "grant", widget: "string", required: false},
-              {label: "Date", name: "date", widget: "string", required: false},
-              {label: "Funding", name: "funding", widget: "string", required: false},
-              {label: "Chief Investigators", name: "chiefinvestigators", widget: "string", required: false},
-              {label: "Partners", name: "partners", widget: "string", required: false},
-              {label: "Summary", name: "summary", widget: "text", required: false},
-              {label: "Link", name: "link", widget: "string", required: false},
-            ]}
+      # - name: "research-projects"
+      #   label: "Research Projects"
+      #   file: "source/pages/research-projects/index.md"
+      #   fields: 
+      #     - {label: Title, name: title, widget: string}
+      #     - {label: "Projects", name: "projects", widget: "list", fields: [
+      #         {label: "Project Title", name: "title", widget: "string"},
+      #         {label: "Grant", name: "grant", widget: "string", required: false},
+      #         {label: "Date", name: "date", widget: "string", required: false},
+      #         {label: "Funding", name: "funding", widget: "string", required: false},
+      #         {label: "Chief Investigators", name: "chiefinvestigators", widget: "string", required: false},
+      #         {label: "Partners", name: "partners", widget: "string", required: false},
+      #         {label: "Summary", name: "summary", widget: "text", required: false},
+      #         {label: "Link", name: "link", widget: "string", required: false},
+      #       ]}
 
-      - name: "join-us"
-        label: "Join Us"
-        file: "source/pages/join-us/index.md"
-        fields:
-          - {label: Title, name: title, widget: string}
+      # - name: "join-us"
+      #   label: "Join Us"
+      #   file: "source/pages/join-us/index.md"
+      #   fields:
+      #     - {label: Title, name: title, widget: string}
 
       # - name: "resources"
       # - name: "hardware"

@@ -3,7 +3,7 @@ extends htmldoc.pug
 block content
                 h2= page.title
                 article !{page.content}
-                article
+                article.frontmatter
                     - sections = _.groupBy(page.items, 'section')
                     each sectionRows, section in sections
                         section.data-section(class=className('data-section-'+section))
@@ -23,8 +23,8 @@ block content
                                                 else if (col == 'link')
                                                     a(href=data)= data
                                                 else if (col == 'photo' && data != '')
-                                                    a(href='assets/'+data)
-                                                        img(src='assets/t/'+data)
+                                                    a(href=data)
+                                                        img(src=data)
                                                 else
                                                     != marked(row[col])
 
@@ -47,8 +47,8 @@ block content
                                                 else if (col == 'link')
                                                     a(href=data)= data
                                                 else if (col == 'photo' && data != '')
-                                                    a(href='assets/'+data)
-                                                        img(src='assets/t/'+data)
+                                                    a(href=data)
+                                                        img(src=data)
                                                 else
                                                     != marked(row[col])
 
