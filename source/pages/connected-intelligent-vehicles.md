@@ -1,6 +1,6 @@
 ---
 title: Connected Intelligent Vehicles
-permalink: connected-intelligent-vehicles
+permalink: connected-intelligent-vehicles/
 layout: "page"
 image: "/images/Moke_GPSApp_NoColour.jpg"
 ---

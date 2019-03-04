@@ -1,6 +1,6 @@
 ---
 title: "Join Us"
-permalink: "join-us"
+permalink: join-us/
 layout: "page"
 image: "/images/background-join-us.jpg"
 ---

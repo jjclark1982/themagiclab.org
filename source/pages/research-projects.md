@@ -1,6 +1,8 @@
 ---
 title: Research Projects
-permalink: research-projects
+permalink: research-projects/
+layout: "page"
+image: "/images/background-research.jpg"
 items:
   - chiefinvestigators: Mary-Anne Williams
     date: 2016 - 2018
