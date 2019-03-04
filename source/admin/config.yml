@@ -46,7 +46,7 @@ collections:
     files:
       - name: "people"
         label: "People"
-        file: "source/pages/people.md"
+        file: "source/custom_pages/people.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: "URL", name: "permalink", default: "{{slug}}"}
@@ -72,7 +72,7 @@ collections:
 
       - name: "research-projects"
         label: "Research Projects"
-        file: "source/pages/research-projects.md"
+        file: "source/custom_pages/research-projects.md"
         fields: 
           - {label: Title, name: title, widget: string}
           - {label: "URL", name: "permalink", default: "{{slug}}"}
@@ -92,7 +92,7 @@ collections:
 
       - name: "leadership"
         label: "Leadership"
-        file: "source/pages/leadership.md"
+        file: "source/custom_pages/leadership.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: "URL", name: "permalink", default: "{{slug}}"}
