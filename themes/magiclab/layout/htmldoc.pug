@@ -15,16 +15,9 @@ html
                     li.pure-menu-item
                         a.logo.pure-menu-link.pure-menu-heading(href="/")
                             img(src="/style/magic-lab-logo.svg" width="160px" alt="The Magic Lab")
-                    li.pure-menu-item
-                        a.pure-menu-link(href="/news-items.html") News
-                    li.pure-menu-item
-                        a.pure-menu-link(href="/people") People
-                    li.pure-menu-item
-                        a.pure-menu-link(href="/research-projects") Research
-                    li.pure-menu-item
-                        a.pure-menu-link(href="/leadership") Leadership
-                    li.pure-menu-item
-                        a.pure-menu-link(href="/join-us") Join Us
+                    each item in site.data.navbar
+                        li.pure-menu-item
+                            a.pure-menu-link(href=item.link)= item.title
 
         main
             .container

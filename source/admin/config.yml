@@ -105,3 +105,16 @@ collections:
               {label: "Link", name: "link", widget: "string", required: false},
               {label: "Summary", name: "summary", widget: "markdown", required: false}
             ]}
+
+
+  - name: "data"
+    label: "Data"
+    files:
+      - name: "navbar"
+        label: "Navbar"
+        file: "source/_data/navbar.yml"
+        fields:
+          - {label: "Items", name: "items", widget: "list", fields: [
+              {label: "Title", name: "title", widget: "string"},
+              {label: "Link", name: "link", widget: "string"},
+            ]}
