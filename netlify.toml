@@ -43,6 +43,11 @@ to = "/robots-and-other-systems/"
 status = 301
 force = false
 [[redirects]]
+from = "/news-items.html"
+to = "/news/"
+status = 301
+force = false
+[[redirects]]
 from = "/QandAGeneration/*"
 to = "http://sajjadhaider.pythonanywhere.com/:splat"
 status = 200

@@ -14,6 +14,11 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>
+    var SectionPreview = createClass({
+      render: function() {
+        return h('div')
+      }
+    });
     var PostPreview = createClass({
       render: function() {
         window.lastEntry = this.props.entry;

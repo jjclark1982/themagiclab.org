@@ -1,7 +1,7 @@
 extends htmldoc.pug
 
 block content
-                h2= page.title
+                h2!= marked(page.title)
                 article !{page.content}
                 article.frontmatter
                     if page.items

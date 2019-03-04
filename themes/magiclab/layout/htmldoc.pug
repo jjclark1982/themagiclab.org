@@ -6,11 +6,15 @@ html(lang="en")
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(name="Description" content=((page || {}).content || '').substring(0,140))
-        title= page.title + " | " + config.title
+        block title
+            title= page.title + " | " + config.title
         link(rel='stylesheet', href='/style/main.css')
     
     body.data-page(class=className('data-page-'+page.title))
-        .background(style=`background-image: url(${page.image})`)
+        block background
+            if page.image
+                - background_style = "background-image: url(" + page.image + ")"
+            .background(style=background_style)
         header
             .container.pure-menu.pure-menu-horizontal
                 ul.pure-menu-list

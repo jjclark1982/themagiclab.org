@@ -1,12 +1,39 @@
 extends htmldoc.pug
 
+block title
+    - page.title = "News Items"
+    title= "News" + " | " + config.title
+
+block background
+    .background(style=`background-image: url(/images/FuchsiaTashiMoke.jpg)`)
+
 block content
-    each key in Object.keys(page)
-        div
-            span= key
+    // h3 Site
+    // each key in Object.keys(site)
+    //     div
+    //         span= key
+
+    // h3 Page
+    // each key in Object.keys(page)
+    //     div
+    //         span= key
+
     //- pre= JSON.stringify(Object.keys(page.posts.data[0]))
     //- pre= JSON.stringify(Objec)
+    h2= page.title
+    article !{page.content}
+
     each post in page.posts.data
-        h2= post.title
-        p= post.date
-        article !{post.content}
+        article
+            div.data-field-title!= marked(post.title)
+            a(href="/"+post.path)
+                time.data-field-date(datetime=post.date)= date(post.date, "MMM DD, YYYY")
+            p !{post.content}
+
+    div
+        if page.prev_link
+            a(href=page.prev_link) < Newer Posts
+        if page.prev_link && page.next_link
+            span= " | "
+        if page.next_link
+            a(href=page.next_link) Older Posts >

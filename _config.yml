@@ -51,8 +51,8 @@ highlight:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: 'news/'
-  per_page: 10
+  path: '/news/'
+  per_page: 20
   order_by: -date
   
 # Category & Tag
