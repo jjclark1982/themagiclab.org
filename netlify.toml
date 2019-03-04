@@ -43,7 +43,7 @@ to = "/robots-and-other-systems/"
 status = 301
 force = false
 [[redirects]]
-from = "/QandAGeneration*"
+from = "/QandAGeneration/*"
 to = "http://sajjadhaider.pythonanywhere.com/:splat"
 status = 200
 force = false
