@@ -66,11 +66,14 @@ collections:
         file: "source/pages/leadership.md"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: "URL", name: "permalink", default: "{{slug}}"}
+          - {label: "Body", name: "body", widget: "markdown"}
           - {label: Sections, name: sections, widget: list,
               fields: [
                 {label: "Heading", name: "heading", widget: string},
                 {label: Items, name: items, widget: list,
                   fields: [
+                    {label: Name, name: name, widget: string, required: false},
                     {label: Date, name: date, widget: string, required: false},
                     {label: Link, name: link, widget: string, required: false},
                     {label: Location, name: location, widget: string, required: false},
@@ -86,6 +89,8 @@ collections:
         file: "source/pages/research-projects.md"
         fields: 
           - {label: Title, name: title, widget: string}
+          - {label: "URL", name: "permalink", default: "{{slug}}"}
+          - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Projects", name: "items", widget: "list", fields: [
               {label: "Project Title", name: "projecttitle", widget: "string"},
               {label: "Date", name: "date", widget: "string", required: false},
