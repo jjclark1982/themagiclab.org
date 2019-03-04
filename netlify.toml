@@ -1,0 +1,44 @@
+[build]
+  command = 'hexo generate'
+  publish = 'public/'
+
+[[redirects]]
+from = "/connected-intelligent-vehicles.html"
+to = "/connected-intelligent-vehicles/"
+status = 301
+force = false
+[[redirects]]
+from = "/invited-speaker-presentations.html"
+to = "/invited-speaker-presentations/"
+status = 301
+force = false
+[[redirects]]
+from = "/join-us.html"
+to = "/join-us/"
+status = 301
+force = false
+[[redirects]]
+from = "/leadership.html"
+to = "/leadership/"
+status = 301
+force = false
+[[redirects]]
+from = "/people.html"
+to = "/people/"
+status = 301
+force = false
+[[redirects]]
+from = "/research-projects.html"
+to = "/research-projects/"
+status = 301
+force = false
+[[redirects]]
+from = "/resources.html"
+to = "/resources/"
+status = 301
+force = false
+[[redirects]]
+from = "/robots-and-other-systems.html"
+to = "/robots-and-other-systems/"
+status = 301
+force = false

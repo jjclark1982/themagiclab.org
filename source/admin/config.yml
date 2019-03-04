@@ -67,6 +67,8 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: "URL", name: "permalink", default: "{{slug}}"}
+          - {label: "Layout", name: "layout", widget: hidden, default: "page"}
+          - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: Sections, name: sections, widget: list,
               fields: [
@@ -90,6 +92,8 @@ collections:
         fields: 
           - {label: Title, name: title, widget: string}
           - {label: "URL", name: "permalink", default: "{{slug}}"}
+          - {label: "Layout", name: "layout", widget: hidden, default: "page"}
+          - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Projects", name: "items", widget: "list", fields: [
               {label: "Project Title", name: "projecttitle", widget: "string"},
