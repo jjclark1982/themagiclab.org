@@ -75,24 +75,24 @@ collections:
                     {label: Link, name: link, widget: string, required: false},
                     {label: Location, name: location, widget: string, required: false},
                     {label: Who, name: who, widget: string, required: false},
-                    {label: Description, name: description, widget: text, required: false}
+                    {label: Description, name: description, widget: markdown, required: false}
                   ]
                 }
               ]
             }
 
-      # - name: "research-projects"
-      #   label: "Research Projects"
-      #   file: "source/pages/research-projects.md"
-      #   fields: 
-      #     - {label: Title, name: title, widget: string}
-      #     - {label: "Projects", name: "projects", widget: "list", fields: [
-      #         {label: "Project Title", name: "title", widget: "string"},
-      #         {label: "Grant", name: "grant", widget: "string", required: false},
-      #         {label: "Date", name: "date", widget: "string", required: false},
-      #         {label: "Funding", name: "funding", widget: "string", required: false},
-      #         {label: "Chief Investigators", name: "chiefinvestigators", widget: "string", required: false},
-      #         {label: "Partners", name: "partners", widget: "string", required: false},
-      #         {label: "Summary", name: "summary", widget: "text", required: false},
-      #         {label: "Link", name: "link", widget: "string", required: false},
-      #       ]}
+      - name: "research-projects"
+        label: "Research Projects"
+        file: "source/pages/research-projects.md"
+        fields: 
+          - {label: Title, name: title, widget: string}
+          - {label: "Projects", name: "items", widget: "list", fields: [
+              {label: "Project Title", name: "projecttitle", widget: "string"},
+              {label: "Date", name: "date", widget: "string", required: false},
+              {label: "Grant", name: "grant", widget: "string", required: false},
+              {label: "Funding", name: "funding", widget: "string", required: false},
+              {label: "Chief Investigators", name: "chiefinvestigators", widget: "string", required: false},
+              {label: "Partners", name: "partners", widget: "string", required: false},
+              {label: "Link", name: "link", widget: "string", required: false},
+              {label: "Summary", name: "summary", widget: "markdown", required: false}
+            ]}
