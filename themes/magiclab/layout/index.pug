@@ -4,7 +4,7 @@ block content
     each key in Object.keys(page)
         div
             span= key
-    pre= JSON.stringify(Object.keys(page.posts.data[0]))
+    //- pre= JSON.stringify(Object.keys(page.posts.data[0]))
     //- pre= JSON.stringify(Objec)
     each post in page.posts.data
         h2= post.title

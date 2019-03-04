@@ -71,7 +71,6 @@ collections:
                 {label: "Heading", name: "heading", widget: string},
                 {label: Items, name: items, widget: list,
                   fields: [
-                    {label: Title, name: name, widget: string},
                     {label: Date, name: date, widget: string, required: false},
                     {label: Link, name: link, widget: string, required: false},
                     {label: Location, name: location, widget: string, required: false},
@@ -84,7 +83,7 @@ collections:
 
       # - name: "research-projects"
       #   label: "Research Projects"
-      #   file: "source/pages/research-projects/index.md"
+      #   file: "source/pages/research-projects.md"
       #   fields: 
       #     - {label: Title, name: title, widget: string}
       #     - {label: "Projects", name: "projects", widget: "list", fields: [
@@ -97,14 +96,3 @@ collections:
       #         {label: "Summary", name: "summary", widget: "text", required: false},
       #         {label: "Link", name: "link", widget: "string", required: false},
       #       ]}
-
-      # - name: "join-us"
-      #   label: "Join Us"
-      #   file: "source/pages/join-us/index.md"
-      #   fields:
-      #     - {label: Title, name: title, widget: string}
-
-      # - name: "resources"
-      # - name: "hardware"
-      # - name: "invited-speaker-presentations"
-

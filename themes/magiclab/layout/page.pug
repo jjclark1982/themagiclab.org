@@ -4,52 +4,80 @@ block content
                 h2= page.title
                 article !{page.content}
                 article.frontmatter
-                    - sections = _.groupBy(page.items, 'section')
-                    each sectionRows, section in sections
-                        section.data-section(class=className('data-section-'+section))
-                            if (section && section != 'undefined')
-                                h3
-                                    a.section-link(id=className(section))
-                                    = section
-                            each row in sectionRows
-                                div.data-item
-                                    each col in Object.keys(row)
-                                        - data = row[col]
-                                        if (col[0] != '_' && col != 'id' && col != 'section' && data)
-                                            .data-field(class=className('data-field-'+col))
-                                                if (col == 'name' && row['link'])
-                                                    a(href=row['link'])= data
-                                                    - delete row['link']
-                                                else if (col == 'link')
-                                                    a(href=data)= data
-                                                else if (col == 'photo' && data != '')
-                                                    a(href=data)
-                                                        img(src=data)
-                                                else
-                                                    != marked(row[col])
+                    if page.items
+                        - sections = _.groupBy(page.items, 'section')
+                        each sectionRows, heading in sections
+                            section.data-section(class=className('data-section-'+heading))
+                                if (heading && heading != 'undefined')
+                                    h3
+                                        a.section-link(id=className(heading))
+                                        = heading
+                                each row in sectionRows
+                                    div.data-item
+                                        each col in Object.keys(row)
+                                            - data = row[col]
+                                            if (col[0] != '_' && col != 'id' && col != 'section' && data)
+                                                .data-field(class=className('data-field-'+col))
+                                                    if (col == 'name' && row['link'])
+                                                        a(href=row['link'])= data
+                                                        - delete row['link']
+                                                    else if (col == 'link')
+                                                        a(href=data)= data
+                                                    else if (col == 'photo' && data != '')
+                                                        a(href=data)
+                                                            img(src=data)
+                                                    else
+                                                        != marked(row[col])
 
-                    - sections = _.defaults(page.sections, {})
-                    each sectionRows, section in sections
-                        section.data-section(class=className('data-section-'+section))
-                            if (section && section != 'undefined')
-                                h3
-                                    a.section-link(id=className(section))
-                                    = section
-                            each row in sectionRows
-                                div.data-item
-                                    each col in Object.keys(row)
-                                        - data = row[col]
-                                        if (col[0] != '_' && col != 'id' && col != 'section' && data)
-                                            .data-field(class=className('data-field-'+col))
-                                                if (col == 'name' && row['link'])
-                                                    a(href=row['link'])= data
-                                                    - delete row['link']
-                                                else if (col == 'link')
-                                                    a(href=data)= data
-                                                else if (col == 'photo' && data != '')
-                                                    a(href=data)
-                                                        img(src=data)
-                                                else
-                                                    != marked(row[col])
+                    else if Array.isArray(page.sections)
+                        - sections = page.sections
+                        each section in sections
+                            section.data-section(class=className('data-section-'+section.heading))
+                                if (section.heading && section.heading != 'undefined')
+                                    h3
+                                        a.section-link(id=className(section.heading))
+                                        = section.heading
+                                each row in section.items
+                                    div.data-item
+                                        each col in Object.keys(row)
+                                            - data = row[col]
+                                            if (col[0] != '_' && col != 'id' && col != 'section' && data)
+                                                .data-field(class=className('data-field-'+col))
+                                                    if (col == 'name' && row['link'])
+                                                        a(href=row['link'])= data
+                                                        - delete row['link']
+                                                    else if (col == 'link')
+                                                        a(href=data)= data
+                                                    else if (col == 'photo' && data != '')
+                                                        a(href=data)
+                                                            img(src=data)
+                                                    else
+                                                        != marked(row[col])
+
+                    else if page.sections
+                        - sections = _.defaults(page.sections, {})
+                        each sectionRows, heading in sections
+                            section.data-section(class=className('data-section-'+heading))
+                                if (heading && heading != 'undefined')
+                                    h3
+                                        a.section-link(id=className(heading))
+                                        = heading
+                                each row in sectionRows
+                                    div.data-item
+                                        each col in Object.keys(row)
+                                            - data = row[col]
+                                            if (col[0] != '_' && col != 'id' && col != 'section' && data)
+                                                .data-field(class=className('data-field-'+col))
+                                                    if (col == 'name' && row['link'])
+                                                        a(href=row['link'])= data
+                                                        - delete row['link']
+                                                    else if (col == 'link')
+                                                        a(href=data)= data
+                                                    else if (col == 'photo' && data != '')
+                                                        a(href=data)
+                                                            img(src=data)
+                                                    else
+                                                        != marked(row[col])
+
 
                     div(style="clear:both;")
