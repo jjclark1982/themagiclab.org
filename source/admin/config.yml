@@ -41,29 +41,12 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "people"
-    label: "People"
-    label_singular: "Person"
-    folder: "source/people"
-    identifier_field: "name"
-    slug: "{{name}}"
-    create: true
-    fields:
-      - {label: "Section", name: "section", widget: "select", options: ["Research Team", "Graduates", "Current Students", "Research Collaborators and Visitors"]}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Link", name: "link", widget: "string", required: false}
-      - {label: "Photo", name: "photo", widget: "image", required: false}
-      - {label: "Date", name: "date", widget: "string", required: false}
-      - {label: "Employer", name: "employer", widget: "string", required: false}
-      - {label: "Research Topic", name: "researchtopic", widget: "string", required: false}
-      - {label: "Bio", name: "bio", widget: "text", required: false}
-
   - name: "custom-pages"
     label: "Custom Pages"
     files:
-      - name: "leadership"
-        label: "Leadership"
-        file: "source/pages/leadership.md"
+      - name: "people"
+        label: "People"
+        file: "source/pages/people.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: "URL", name: "permalink", default: "{{slug}}"}
@@ -75,12 +58,13 @@ collections:
                 {label: "Heading", name: "heading", widget: string},
                 {label: Items, name: items, widget: list,
                   fields: [
-                    {label: Name, name: name, widget: string, required: false},
-                    {label: Date, name: date, widget: string, required: false},
-                    {label: Link, name: link, widget: string, required: false},
-                    {label: Location, name: location, widget: string, required: false},
-                    {label: Who, name: who, widget: string, required: false},
-                    {label: Description, name: description, widget: markdown, required: false}
+                    {label: "Name", name: "name", widget: "string"},
+                    {label: "Link", name: "link", widget: "string", required: false},
+                    {label: "Photo", name: "photo", widget: "image", required: false},
+                    {label: "Date", name: "date", widget: "string", required: false},
+                    {label: "Employer", name: "employer", widget: "string", required: false},
+                    {label: "Research Topic", name: "researchtopic", widget: "string", required: false},
+                    {label: "Bio", name: "bio", widget: "markdown", required: false},
                   ]
                 }
               ]
@@ -106,6 +90,30 @@ collections:
               {label: "Summary", name: "summary", widget: "markdown", required: false}
             ]}
 
+      - name: "leadership"
+        label: "Leadership"
+        file: "source/pages/leadership.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "URL", name: "permalink", default: "{{slug}}"}
+          - {label: "Layout", name: "layout", widget: hidden, default: "page"}
+          - {label: Image, name: image, widget: image}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Sections, name: sections, widget: list,
+              fields: [
+                {label: "Heading", name: "heading", widget: string},
+                {label: Items, name: items, widget: list,
+                  fields: [
+                    {label: Name, name: name, widget: string, required: false},
+                    {label: Date, name: date, widget: string, required: false},
+                    {label: Link, name: link, widget: string, required: false},
+                    {label: Location, name: location, widget: string, required: false},
+                    {label: Who, name: who, widget: string, required: false},
+                    {label: Description, name: description, widget: markdown, required: false}
+                  ]
+                }
+              ]
+            }
 
   - name: "data"
     label: "Data"
