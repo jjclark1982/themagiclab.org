@@ -48,6 +48,16 @@ to = "/news/"
 status = 301
 force = false
 [[redirects]]
+from = "/QandAgeneration.html"
+to = "http://sajjadhaider.pythonanywhere.com/"
+status = 200
+force = false
+[[redirects]]
+from = "/collect"
+to = "http://sajjadhaider.pythonanywhere.com/collect"
+status = 200
+force = false
+[[redirects]]
 from = "/QandAGeneration/*"
 to = "http://sajjadhaider.pythonanywhere.com/:splat"
 status = 200
