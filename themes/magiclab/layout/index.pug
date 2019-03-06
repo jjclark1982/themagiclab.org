@@ -25,10 +25,10 @@ block content
 
     each post in page.posts.data
         article
-            div.data-field-title!= marked(post.title)
             a(href="/"+post.path)
-                time.data-field-date(datetime=post.date)= date(post.date, "MMM DD, YYYY")
-            p !{post.content}
+                time.data-field-date(datetime=post.date)= date(post.date, "DD MMM, YYYY")
+            div.data-field-title!= marked(post.title)
+            div.data-field-body !{post.content}
 
     div
         if page.prev_link

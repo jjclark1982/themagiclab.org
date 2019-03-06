@@ -1818,14 +1818,18 @@ footer .pure-g {
 
 /* news page */
 
+.data-page-News-Items article {
+    margin: 1em 0;
+}
 .data-page-News-Items .data-field-title {
     display: block;
     font-weight: bold;
-    margin-top: 1em;
+}
+.data-page-News-Items .data-field-body > p:first-child {
+    margin-top: -1em;
 }
 .data-page-News-Items .data-field-date {
     float: right;
-    margin-top: -1.25em;
 }
 
 /* people page */
