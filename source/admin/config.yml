@@ -1,8 +1,8 @@
 # Netlify-CMS Configuration
 # See https://www.netlifycms.org/docs/configuration-options/
 
-site_url: "https://themagiclab.netlify.com"
-display_url: "https://themagiclab.netlify.com"
+site_url: "https://www.themagiclab.org"
+display_url: "https://www.themagiclab.org"
 logo_url: "/style/magic-lab-logo.svg"
 
 backend:
