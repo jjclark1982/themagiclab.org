@@ -7,7 +7,7 @@ image: /images/Moke_Robot_NoColour.jpg
 
 [magiclab_pepper_os](https://github.com/uts-magic-lab/magiclab_pepper_os): A userspace operating system for Pepper robots. It includes a full ROS stack and up-to-date Python libraries without requiring root access.
 
-[Magic ROS](https://gitlab.com/uts-unleashed/magic_ros): A framework for building fault-tolerant ROS applications. (Publicly available soon)
+[Magic ROS](https://gitlab.com/uts-unleashed/magic_ros): A framework for building fault-tolerant ROS applications. (Publicly available soon) – See [this presentation](https://docs.google.com/presentation/d/e/2PACX-1vSMl5xUauuRfCLs6p1nRzru-e_qE6SUrX83IuK8AhoVjzXIbSSUbJDnnZLw5FKx8PwaIXRKZXHjdYGB/pub?start=false&loop=true&delayms=5000&slide=id.g5c3fe14364_0_1506) explaining the core concepts.
 
 [diagnostics_web_interface](https://gitlab.com/uts-unleashed/diagnostics_web_interface): A general-purpose dashboard for displaying ROS diagnostic data. (Publicly available soon)
 
