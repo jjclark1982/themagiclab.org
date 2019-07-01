@@ -17,3 +17,4 @@ image: /images/Moke_Robot_NoColour.jpg
 
 [magiclab/ros Docker image](https://cloud.docker.com/u/magiclab/repository/docker/magiclab/ros): Multiple ROS distributions with our standard dependencies preinstalled to support automated testing and packaging of machine learning projects.
 
+And see our latest activity at [GitHub](https://github.com/uts-magic-lab) and [GitLab](https://github.com/uts-magic-lab).
