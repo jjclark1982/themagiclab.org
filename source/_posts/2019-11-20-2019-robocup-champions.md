@@ -7,6 +7,4 @@ description: >-
 tags:
   - RoboCup
 ---
-
-
 ![](/images/uts-unleashed.jpg)
