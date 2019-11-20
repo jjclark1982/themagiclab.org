@@ -38,6 +38,8 @@ We are looking for passionate and innovative students who will contribute to the
 
 <b>Innovation and Entrepreneurship</b>: <font color = #808080> work with advanced disruptive technologies that will transform life, business, and the global economy.</font>
 
+<b>Transforming Healthcare with Data Science</b>: <font color = #808080> work with advanced disruptive technologies that will transform healthcare.</font>
+
 <b>Intelligent Connected Self-Flying Vehicles Project:</b> <font color = #808080>work with five self-flying drones and a road-base connected vehicle.</font>
 
 <b>Disruptive Innovation and Leadership:</b><font color = #808080> disruptive innovation is a critical part of strategic leadership develop a new understanding of how leaders can use innovation to drive growth.</font>
