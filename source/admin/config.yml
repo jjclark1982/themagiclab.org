@@ -116,7 +116,7 @@ collections:
             }
 
       - name: "invited-speaker-presentations"
-        label: "Leadership"
+        label: "Invited Speaker Presentations"
         file: "source/custom_pages/invited-speaker-presentations.md"
         fields:
           - {label: Title, name: title, widget: string}
