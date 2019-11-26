@@ -12,7 +12,7 @@
   "author": "Jesse Clark <jjclark1982@gmail.com>",
   "license": "Copyright University of Technology Sydney, all rights reserved.",
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "dependencies": {
     "hexo": "^3.8.0",
@@ -21,8 +21,8 @@
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-jade": "^0.4.1",
-    "hexo-renderer-marked": "^0.3.2",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^0.3.3"
   },
   "devDependencies": {
